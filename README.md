@@ -21,5 +21,5 @@ Cmake 3.6 or greater
 ```source install.bash``` 
 
 Test it with 
-```python3 test_mul.py``` 
+```python3 test/test.py``` 
  
