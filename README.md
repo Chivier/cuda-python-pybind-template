@@ -1,12 +1,12 @@
 # pybind11-cuda
 
-Compiles out of the box with cmake 
-
 Numpy integration 
 
 C++ Templating for composable kernels with generic data types 
 
-Originally based on https://github.com/torstem/demo-cuda-pybind11
+Originally based on https://github.com/torstem/demo-cuda-pybind11 and https://github.com/PWhiddy/pybind11-cuda
+
+Give an example of how to pass (host/device) pointers between C++ and python.
 
 # Prerequisites
 
@@ -18,8 +18,13 @@ Cmake 3.6 or greater
 
 # To build 
 
-```source install.bash``` 
+```bash
+bash install.bash
+```
 
 Test it with 
-```python3 test/test.py``` 
+
+```bash
+python3 test/test.py
+``` 
  
