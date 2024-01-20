@@ -12,13 +12,11 @@ factor = 1.0001
 t0 = time.time()
 # telekinesis.multiply_with_scalar(arr1, 1.0001, 100)
 
-try:
-    ptr = telekinesis.array_create(arr1)
-    for run_index in range(runs):
-        telekinesis.array_map(ptr, factor, size)
-    telekinesis.array_remove(ptr, arr1)
-except Exception as e:
-    print(e)
+ptr = telekinesis.array_create(arr1)
+for run_index in range(runs):
+    telekinesis.array_map(ptr, factor, size)
+telekinesis.array_remove(ptr, arr1)
+
     
 print("gpu time: " + str(time.time()-t0))
 t0 = time.time()
